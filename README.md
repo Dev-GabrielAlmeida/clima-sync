@@ -1,6 +1,6 @@
 # Clima Sync
 
-![Clima Sync](https://www.dropbox.com/scl/fi/yy58aolhd9ied6f800h92/project-climasync.png?rlkey=ar5aummygaxvmv5bqgdsqssf9&st=iu4enpa6&dl=0)
+![Clima Sync](https://www.dropbox.com/scl/fi/yy58aolhd9ied6f800h92/project-climasync.png?rlkey=ar5aummygaxvmv5bqgdsqssf9&st=vk96v078&dl=0)
 
 ## Descrição
 

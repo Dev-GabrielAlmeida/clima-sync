@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/grid-layout.css">
+    <link rel="stylesheet" href="styles/responsive-layout.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/image/icon-clima-sync.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Clima Sync</title>
+</head>
+
+<body class="flex-center background-gradient-blue">
+    <main>
+
+        <section class="location-search flex-center">
+            <input type="text" placeholder="Enter city..." aria-label="City Search" id="inputCity" autocomplete="off"
+                required />
+            <button aria-label="Search" id="btnSearchWeather"><i class="bi bi-search"></i></button>
+        </section>
+
+        <section class="current-temperature flex-center">
+            <p class="temperature-value" id="temperature"></p>
+            <div class="weather-icon" id="icon">            
+            </div>
+        </section>
+
+        <section class="location-info flex-center">
+            <h3 id="location"></h3>
+            <h5 id="descriptionWeather"></h5>
+        </section>
+
+        <section class="weather-details flex-center">
+
+            <div class="humidity-info flex-center">
+                <span class="icon-humidity flex-center background-gradient-blue">
+                    <i class="bi bi-droplet"></i>
+                </span>
+                <p id="humidity"></p>
+            </div>
+
+            <div class="wind-speed-info flex-center">
+                <span class="icon-wind flex-center background-gradient-blue">
+                    <i class="bi bi-wind"></i>
+                </span>
+                <p id="wind"></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="scripts/services/apiConnector.js"></script>
+</body>
+
+</html>

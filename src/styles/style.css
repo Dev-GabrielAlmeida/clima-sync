@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #090909;
+  --secondary-color: #f8f8f8;
+  --text-color: rgba(23, 44, 232, 0.944);
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  width: 29.5rem;
+  height: 38.5rem;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* ===== AREÁ DE PESQUISA =====*/
+
+.location-search {
+  margin-bottom: -10%;
+}
+
+.location-search input {
+  appearance: none;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  color: var(--primary-color);
+  font-size: 13px;
+  height: 46px;
+  padding: 1rem;
+  transition: border 0.15s ease;
+  width: 50%;
+}
+
+.location-search input:focus {
+  border-color: 1px solid var(--text-color);
+  outline: none;
+}
+
+.location-search button {
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 0.8rem 1.5rem;
+}
+
+.location-search button:hover {
+  background: linear-gradient(
+    90deg,
+    hsla(234, 82%, 50%, 1) 0%,
+    hsla(184, 94%, 51%, 1) 100%
+  );
+  color: var(--secondary-color);
+}
+
+/* ===== FIM DA AREÁ DE PESQUISA =====*/
+
+/* ===== AREÁ DA TEMPERATURA ===== */
+
+.current-temperature {
+  justify-content: space-evenly;
+}
+
+.temperature-value,
+.weather-icon {
+  margin-bottom: -20%;
+  font-size: 4.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.current-temperature .weather-icon img {
+  width: 7rem;
+  height: auto;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 3px 8px);
+}
+
+.location-info {
+  flex-direction: column;
+  gap: .9rem;
+}
+
+.location-info h5 {
+  border-left: 3px solid var(--text-color);
+  border-right: 3px solid var(--text-color);
+  padding: 0 10px;
+}
+
+.location-info h3 img {
+  margin-bottom: -8px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.20) 0px 3px 8px);
+}
+
+/* ===== FIM AREÁ DA TEMPERATURA ===== */
+
+/* ===== AREÁ DE INFORMAÇÕES ADICIONAIS ===== */
+
+.weather-details {
+  margin: 0 20px;
+}
+
+.humidity-info,
+.wind-speed-info {
+  position: relative;
+  padding: 1.5rem;
+  height: 4.5rem;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.humidity-info .icon-humidity,
+.wind-speed-info .icon-wind {
+  position: absolute;
+  left: 0%;
+  padding: 1.5rem;
+  height: 4.5rem;
+  font-size: 22px;
+  border-radius: 15px;
+  color: var(--secondary-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.humidity-info p,
+.wind-speed-info p {
+  margin-left: 5rem;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.humidity-info p span,
+.wind-speed-info p span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* ===== FIM AREÁ DE INFORMAÇÕES ADICIONAIS ===== */

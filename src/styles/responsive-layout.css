@@ -1,0 +1,28 @@
+@media (max-width: 640px) {
+  .weather-details {
+    margin: 0 10px;
+  }
+
+  .humidity-info,
+  .wind-speed-info {
+    width: 170px;
+    height: auto;
+  }
+
+  .humidity-info .icon-humidity,
+  .wind-speed-info .icon-wind {
+    padding: 1rem;
+    font-size: 17px;
+  }
+
+  .humidity-info p,
+  .wind-speed-info p {
+    margin-left: 0;
+    font-size: 17px;
+  }
+
+  .humidity-info p span,
+  .wind-speed-info p span {
+    font-size: 10px;
+  }
+}

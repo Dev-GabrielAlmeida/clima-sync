@@ -1,4 +1,5 @@
 const weatherApiKey = "MYAPIKEY";
+const erroMsg = document.getElementById('erro-msg');
 
 const getData = async (city) => {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherApiKey}&lang=enr&units=metric`)

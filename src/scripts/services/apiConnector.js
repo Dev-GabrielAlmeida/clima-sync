@@ -17,6 +17,9 @@ const fetchWeatherData = async (city) => {
             throw new Error("Cidade não encontrada ou erro na API");
         }
 
+        // Garante que a mensagem de erro fique escondida
+        erroMsg.style.visibility = 'hidden';
+
         // Aguardando a bandeira carregar
         const flagElement = await getFlag(apiResponse.sys.country);
 
@@ -38,6 +41,8 @@ const fetchWeatherData = async (city) => {
 
     } catch (error) {
 
+        erroMsg.style.visibility = 'visible';
+        
         console.error("Erro ao buscar dados do clima:", error);
         return `Erro: ${error.message}`;
 
